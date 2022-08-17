@@ -1,5 +1,6 @@
 package com.yjxxt.pojo;
 
+
 import java.util.Date;
 
 public class Note {
@@ -8,13 +9,23 @@ public class Note {
     private String content;
     private Integer typeId;
     private Date pubTime;
+    private Integer click;
 
-    public Note(Integer id, String title, String content, Integer typeId, Date pubTime) {
+    public Integer getClick() {
+        return click;
+    }
+
+    public void setClick(Integer click) {
+        this.click = click;
+    }
+
+    public Note(Integer id, String title, String content, Integer typeId, Date pubTime, Integer click) {
         this.id = id;
         this.title = title;
         this.content = content;
         this.typeId = typeId;
         this.pubTime = pubTime;
+        this.click = click;
     }
 
     public Note() {
@@ -28,6 +39,7 @@ public class Note {
                 ", content='" + content + '\'' +
                 ", typeId=" + typeId +
                 ", pubTime=" + pubTime +
+                ", click=" + click +
                 '}';
     }
 

@@ -170,7 +170,7 @@ public class UserService {
     }
 
     //封装的查询方法
-    private User findUserByUserId(Integer userId) {
+    public User findUserByUserId(Integer userId) {
         Integer index = null;
         for (int i = 0; i < users.size(); i++) {
             if (users.get(i).getId().equals(userId)){

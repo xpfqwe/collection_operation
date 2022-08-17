@@ -14,7 +14,8 @@ public class NoteType {
                 '}';
     }
 
-    public Integer getId() {
+
+    public  Integer getId() {
         return id;
     }
 
